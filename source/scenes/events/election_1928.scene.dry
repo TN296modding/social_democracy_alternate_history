@@ -315,6 +315,10 @@ There are some potential coalition arrangements.
 @coalition_menu
 
 - @spd_majority
+- @kpd_majority
+- @Z_majority
+- @DVP_majority
+- @DDP_majority
 - @weimar_coalition
 - @grand_coalition
 - @new_grand_coalition
@@ -771,6 +775,29 @@ Otto Wels has become chancellor of the SPD majority.
 
 # TODO: Otto Wels should be able to be chancellor of a Grand Coalition, Weimar Coalition, or SPD majority after Müller dies.
 
+@kpd_majority
+title: SPD majority alone
+subtitle: KPD: [+ kpd_r +]%
+view-if: kpd_r >= 50
+on-arrival: chancellor = "Thälmann"; chancellor_party = "KPD"; spd_in_government = 0; in_spd_majority = 0; pro_republic -= 5; foreign_minister_party = "KPD"; foreign_minister = "Thälmann"; interior_minister_party = "KPD"; interior_minister = "Thälmann"; justice_minister_party = "KPD"; justice_minister = "Thälmann"; labor_minister_party = "KPD"; labor_minister = "Thälmann"; reichswehr_minister_party = "KPD"; reichswehr_minister = "Thälmann"; economic_minister_party = "KPD"; economic_minister = "Thälmann"; finance_minister_party = "KPD"; finance_minister = "Thälmann"; agriculture_minister_party = "KPD"; agriculture_minister = "Thälmann"; reichswehr_loyalty -= 0.05; 
+
+@Z_majority
+title: SPD majority alone
+subtitle: SPD: [+ z_r +]%
+view-if: z_r >= 50
+on-arrival: chancellor = "Brüning"; chancellor_party = "Z"; spd_in_government = 0; in_spd_majority = 0; pro_republic += 5; foreign_minister_party = "Z"; foreign_minister = "Brüning"; interior_minister_party = "Z"; interior_minister = "Brüning"; justice_minister_party = "Z"; justice_minister = "Brüning"; labor_minister_party = "Z"; labor_minister = "Brüning"; reichswehr_minister_party = "Z"; reichswehr_minister = "Brüning"; economic_minister_party = "Z"; economic_minister = "Brüning"; finance_minister_party = "Z"; finance_minister = "Brüning"; agriculture_minister_party = "Z"; agriculture_minister = "Brüning"; reichswehr_loyalty -= 0.05; 
+
+@DDP_majority
+title: SPD majority alone
+subtitle: SPD: [+ spd_r +]%
+view-if: spd_r >= 50
+on-arrival: chancellor = "Koch-Weser"; chancellor_party = "DDP"; spd_in_government = 0; in_spd_majority = 0; pro_republic += 5; foreign_minister_party = "DDP"; foreign_minister = "Koch-Weser"; interior_minister_party = "DDP"; interior_minister = "Koch-Weser"; justice_minister_party = "DDP"; justice_minister = "Koch-Weser"; labor_minister_party = "DDP"; labor_minister = "Koch-Weser"; reichswehr_minister_party = "SPD"; reichswehr_minister = "Koch-Weser"; economic_minister_party = "DDP"; economic_minister = "Koch-Weser"; finance_minister_party = "DDP"; finance_minister = "Koch-Weser"; agriculture_minister_party = "DDP"; agriculture_minister = "Koch-Weser"; reichswehr_loyalty -= 0.05; 
+
+@DVP_majority
+title: SPD majority alone
+subtitle: SPD: [+ spd_r +]%
+view-if: spd_r >= 50
+on-arrival: chancellor = "Stresemann"; chancellor_party = "DVP"; spd_in_government = 0; in_spd_majority = 0; pro_republic += 5; foreign_minister_party = "DVP"; foreign_minister = "Stresemann"; interior_minister_party = "DVP"; interior_minister = "Stresemann"; justice_minister_party = "DVP"; justice_minister = "Stresemann"; labor_minister_party = "DVP"; labor_minister = "Stresemann"; reichswehr_minister_party = "DVP"; reichswehr_minister = "Stresemann"; economic_minister_party = "DVP"; economic_minister = "Stresemann"; finance_minister_party = "DVP"; finance_minister = "Stresemann"; agriculture_minister_party = "DVP"; agriculture_minister = "Stresemann"; reichswehr_loyalty -= 0.05; 
 
 @brauns_dilemma
 title: There is no clear governing majority.
