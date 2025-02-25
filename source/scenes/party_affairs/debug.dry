@@ -1,1 +1,60 @@
+title: DEBUG
+new-page: true
+on-arrival: month_actions += 0
+max-visits: 1000
+is-card: true
+card-image: img/flags.jpg
+frequency: 1000
+tags: party_affairs
 
+= Campaigning
+
+Whether or not we are in an electoral campaign, the party is always trying to broaden its voter base. Who should we focus our campaign efforts on?
+
+- @DVP: The urban working class, our traditional support base.
+- @DDP: The "new middle class" of government employees and white-collar workers.
+- @Z: The "old middle class" of small independent businessmen and artisans.
+- @KPD: Rural workers and small farmers, who have felt neglected by us in the past.
+- @SPD: The unemployed.
+- @root: We either don't want to or cannot campaign right now.
+- @easy_discard
+
+@DVP
+subtitle: DVP
+choose-if: resources >= 0
+unavailable-subtitle: Not enough resources.
+on-arrival: workers_dvp += 100; new_middle_dvp += 100; old_middle_dvp += 100; rural_dvp += 100; unemployed_dvp += 100; catholics_dvp += 100;
+
+DVP
+
+@DDP
+subtitle: DDP
+choose-if: resources >= 0
+unavailable-subtitle: Not enough resources.
+on-arrival: workers_ddp += 100; new_middle_ddp += 100; old_middle_ddp += 100; rural_ddp += 100; unemployed_ddp += 100; catholics_ddp += 100;
+
+DDP
+
+@Z
+subtitle: Z
+choose-if: resources >= 0
+unavailable-subtitle: Not enough resources.
+on-arrival: workers_z += 100; new_middle_z += 100; old_middle_z += 100; rural_z += 100; unemployed_z += 100; catholics_z += 100;
+
+Z
+
+@KPD
+subtitle: KPD
+choose-if: resources >= 0
+unavailable-subtitle: Not enough resources.
+on-arrival: workers_kpd += 100; new_middle_kpd += 100; old_middle_kpd += 100; rural_kpd += 100; unemployed_kpd += 100; catholics_kpd += 100;
+
+KPD
+
+@SPD
+subtitle: SPD
+choose-if: resources >= 0
+unavailable-subtitle: Not enough resources.
+on-arrival: workers_spd += 100; new_middle_spd += 100; old_middle_spd += 100; rural_spd += 100; unemployed_spd += 100; catholics_spd += 100;
+
+SPD
